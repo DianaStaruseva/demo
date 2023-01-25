@@ -1,0 +1,46 @@
+﻿<Window x:Class="demo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:demo"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Border BorderThickness="2" BorderBrush="#FF3EAC3E" CornerRadius="10" 
+                HorizontalAlignment="Center" VerticalAlignment="Center" Width="514" Height="306"/>
+
+
+        <Label Content="Логин" HorizontalAlignment="Left"  VerticalAlignment="Top" RenderTransformOrigin="-0.266,0.609" Margin="287,201,0,0"/>
+        <Label Content="Пароль" HorizontalAlignment="Left"  VerticalAlignment="Top" Margin="279,240,0,0"/>
+        <Label Content="Авторизация" HorizontalAlignment="Center" Margin="0,162,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <TextBox Margin="348,204,288,203" BorderBrush="#FF91E591" BorderThickness="1">
+            <TextBox.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="4"/>
+                </Style>
+            </TextBox.Resources>
+        </TextBox>
+        <TextBox Margin="348,240,288,167" BorderBrush="#FF91E591" BorderThickness="1">
+            <TextBox.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="4"/>
+                </Style>
+            </TextBox.Resources>
+        </TextBox>
+        <CheckBox Margin="362,281,302,133" IsThreeState="True" IsChecked="False" Height="20" Content="Запомнить меня"  BorderBrush="#FF91E591" BorderThickness="1">
+            <CheckBox.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="2"/>
+                </Style>
+            </CheckBox.Resources>
+        </CheckBox>
+        <Button Content="Логин" HorizontalAlignment="Left" Margin="386,306,0,0" VerticalAlignment="Top" Background="#FF3761BB" BorderBrush="#FF144298" Foreground="White" Click="Button_Click" Height="25" Width="70">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="3"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+    </Grid>
+</Window>
